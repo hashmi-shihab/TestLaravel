@@ -1,2 +1,2 @@
 # TestLaravel
-This is a laravel testing app. Built with laravel 5.8 (auth) and integrated with admin lte
+ This is a test Apllication of laravel. Which is built with laravel 5.8 and integrated with admin lte.
