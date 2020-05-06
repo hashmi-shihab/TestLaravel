@@ -1,5 +1,17 @@
 @extends('admin.master')
 @section('content')
+    <section class="content-header">
+        <h1>
+            Soil Nutrition's Details
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="{{route('home')}}"><i class="fa fa-dashboard"></i> Home</a></li>
+            {{--@can('landClassList',\Illuminate\Support\Facades\Auth::user())--}}
+            <li class="active"><a href="{{ route('soilNutrition.index') }}">Soil Nutrition's List</a></li>
+            {{--@endcan--}}
+        </ol>
+    </section>
+    <br>
     <div class="content">
 
         <div class="col-md-6" {{--style="padding: 0 0 0 280px"--}}>

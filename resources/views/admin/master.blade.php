@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TestLaravel</title>
+    <title>LaravelUserRole</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="{{asset('backend/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -20,6 +20,13 @@
     <script src="{{asset('https://oss.maxcdn.com/respond/1.4.2/respond.min.js')}}"></script>
     <link rel="stylesheet" href="{{asset('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic')}}">
     <link rel="stylesheet" href="{{asset('backend/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('backend/bower_components/select2/dist/css/select2.min.css')}}">
+    <style>
+        .required-field::after {
+            content: "*";
+            color: red;
+        }
+    </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -32,17 +39,6 @@
 
 
     <div class="content-wrapper">
-
-        <section class="content-header">
-            <h1>
-                Dashboard
-                <small>Control panel</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Dashboard</li>
-            </ol>
-        </section>
 
 
       <!-- section of dashboard -->
@@ -79,6 +75,7 @@
 <script src="{{asset('backend/dist/js/adminlte.min.js')}}"></script>
 <script src="{{asset('backend/dist/js/pages/dashboard.js')}}"></script>
 <script src="{{asset('backend/dist/js/demo.js')}}"></script>
+<script src="{{asset('backend/bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 
 @yield('jsscript')
 
