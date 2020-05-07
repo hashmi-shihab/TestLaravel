@@ -28,7 +28,7 @@
                         @endif
                     </div>
 
-                    <div class="box-body">
+                    <div class="box-body table-responsive no-padding">
                         <table id="example1" class="table table table-bordered table-striped">
                             <thead>
                             <tr>

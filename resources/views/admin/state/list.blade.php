@@ -28,7 +28,7 @@
                         @endif
                     </div>
 
-                    <div class="box-body">
+                    <div class="box-body table-responsive no-padding">
                         <table id="example1" class="table table-bordered table-striped table-responsive">
                             <thead>
                             <tr>
@@ -49,7 +49,7 @@
                                     <td>{{$state->name_bn}}</td>
                                     <td>{{$state->name_en}}</td>
 
-                                    <td>
+                                    <td nowrap>
                                         <form action="{{route('state.destroy',$state->id)}}" method="post">
                                             @csrf
                                             @method('DELETE')

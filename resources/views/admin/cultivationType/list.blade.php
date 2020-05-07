@@ -30,7 +30,7 @@
                         @endif
                     </div>
 
-                    <div class="box-body">
+                    <div class="box-body table-responsive no-padding">
                         <table id="example1" class="table table-bordered table-striped ">
                             <thead>
                             <tr>
@@ -51,7 +51,7 @@
                                     <td>{{$cultivationType->name_bn}}</td>
                                     <td>{{$cultivationType->name_en}}</td>
 
-                                    <td>
+                                    <td nowrap>
 
                                         <form action="{{route('cultivationType.destroy',$cultivationType->id)}}" method="post">
                                             @csrf
